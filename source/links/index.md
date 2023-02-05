@@ -8,7 +8,7 @@ links:
 - avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
   blog: 云游君的小站
   color: '#0078e7'
-  desc: All at sea.
+  desc: 主题作者
   email: null
   name: 云游君
   url: https://yunyoujun.cn
