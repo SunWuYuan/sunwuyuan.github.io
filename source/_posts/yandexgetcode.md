@@ -1,11 +1,12 @@
 ---
-abbrlink: Yandex代码种子
+abbrlink: ''
 categories:
 - - Yandex
 date: '2023-02-01 10:19:32'
 tags:
 - Yandex
 title: Yandex代码种子
+author: 孙悟元
 ---
 Yandex公司代码泄漏，前员工borderline2023在hackforums上泄露了，一个包含(压缩后)44.7GB(48,009,389,734字节)代码的种子
 目前Yandex已经“承认”，目前代码已经在各大(外国)网站流传，目前媒体宣传中种子均打码(emmm)

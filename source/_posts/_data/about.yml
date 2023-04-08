@@ -1,0 +1,93 @@
+- class_name: 关于页
+  subtitle: 知识创造一切✨
+  avatarImg: https://cdn.wuyuan.dev/sitelogo.png
+  name: 孙悟元
+  description: 是一名 前端工程师、学生、独立开发者、博主
+  aboutsiteTips:
+    tips: 追求
+    title1: 源于
+    title2: 热爱而去 感受
+    word:
+      - 世界
+      - 生活
+      - 程序
+      - 体验
+  helloAbout: 知识创造一切
+  skillsTips:
+    tips: 技能
+    title: 开启创造力
+  careers:
+    tips: 生涯
+    title: 无限进步
+    item:
+      - 初中
+    img: https://cdn.wuyuan.dev/sitelogo.png
+  statistic:
+    link: /archives
+    text: 文章隧道
+  map:
+    title: 我现在住在
+    StrengthenTitle: 中国，长沙市
+    background: https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632e6f48981d8.jpg
+    backgroundDark: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330ebf1f3e65.jpg
+  selfInfo:
+    selfInfoTips1: 生于
+    selfInfoContentYear: 2009
+    selfInfoTips2: 某某遵纪守法学校
+    selfInfoContent2: 月考专业
+    selfInfoTips3: 现在职业
+    selfInfoContent3: 初中生👨‍🎓
+  personalities:
+    author_name: 调解人
+    personality_type: INFP-A
+    photo_url: https://cdn.wuyuan.dev/sitelogo.png
+    personality_img: https://www.16personalities.com/static/images/personality-types/avatars/infp-mediator-male.svg?v=2
+  maxim:
+    maxim_tips: 座右铭
+    maxim_top: 知识
+    maxim_bottom: 创造一切
+  buff:
+    buff_tips: 特长
+    buff_top: 脑回路新奇的 酸菜鱼(没错
+    buff_bottom: 离谱指数99+
+  game:
+    game_tips: 爱好游戏
+    game_title: 我的世界
+    game_uid: "用户名：是孙悟元哦"
+    game_bg: /img/16938d74470a659621494fe740121ada_w1920_h1080_s2181.jpg
+  comic:
+    comic_tips: 喜欢看
+    comic_title: 柯南.......
+    comic_list:
+      - name: 还没改
+        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/63988658aa1b1.webp
+      - name: 还没改
+        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/6398864e572ed.webp
+      - name: 还没改
+        href: https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/639886315d658.webp
+      - name: 还没改
+        href: https://www.bilibili.com/bangumi/media/md22718131/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/639886403d472.webp
+      - name: 还没改
+        href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/6398862649585.webp
+  like:
+    like_tips: 关注偏好
+    like_title: 数码科技
+    like_bg: /img/632f0dd8f33c6.webp
+    like_bottom: 手机、电脑软硬件
+  music:
+    music_tips: 音乐偏好
+    music_title: 古诗词，国风，纯音乐
+    music_bg: /img/ppx.webp
+    music_link: https://wuyuan.dev
+  reward_list:
+    - name: 虚位以待
+      amount: 114514
+      datatime: 6666-01-01
+    
+
+  extra: true

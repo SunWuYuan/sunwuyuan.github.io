@@ -1,4 +1,5 @@
 ---
+abbrlink: ''
 title: 2022,小图灵又一次的刷屏
 categories:
 - 小图灵
