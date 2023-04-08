@@ -38,7 +38,7 @@ nav:
     - title: 项目
       item:
         - name: OurWorld
-          link: http://ourworld.wuyuan.dev
+          link: https://ourworld.wuyuan.dev
           icon: https://ourworld.wuyuan.dev/icon.png
 
 # Code Blocks (代码相关)

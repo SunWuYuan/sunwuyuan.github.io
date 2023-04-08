@@ -73,6 +73,6 @@ updated: '2022-10-04 09:41:11'
 顺便说一下，禁用开发者工具可以引用用下面这个js，专业的多。
 
 ```
-<script disable-devtool-auto src='http://cdn.wuyuan.dev/js/disable-devtool/main.js'></script>
+<script disable-devtool-auto src='https://cdn.wuyuan.dev/js/disable-devtool/main.js'></script>
 
 ```
