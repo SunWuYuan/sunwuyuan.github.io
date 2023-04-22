@@ -3,12 +3,12 @@ if site.data.essay && theme.essay.enable
     .author-content.author-content-item.essayPage.single(style = theme.essay.enable ? `background: url(${theme.essay.top_background}) left 28% / cover no-repeat;` : "")
       .card-content
         .author-content-item-tips 即刻短文
-        span.author-content-item-title 创造一切的路上
+        span.author-content-item-title 咸鱼的日常生活。
         .content-bottom
-          .tips 使用 即刻短文静态部署版 构建， 🤔 与 😏 来自 孙悟元
+          .tips 使用 即刻短文静态部署版 构建
         .banner-button-group
           a.banner-button(onclick='pjax.loadUrl("/about/")')
-            i.fas.fa-circle-right(style='font-size: 1.5rem')
+            i.anzhiyufont.anzhiyu-icon-arrow-circle-right(style='font-size: 1.5rem')
             span.banner-button-text 关于我
     #bber
       section.timeline.page-1
@@ -35,17 +35,17 @@ if site.data.essay && theme.essay.enable
                     .bber-info
                       .bber-info-time
                         - var datedata = new Date(item.date).toISOString()
-                        i.far.fa-clock
+                        i.anzhiyufont.anzhiyu-icon-clock
                         time.datatime(datetime= item.date)= datedata
                       if item.link 
                         a.bber-content-link(target="_blank", title="跳转到短文指引的链接", href=item.link, rel="external nofollow")
-                          i.fas.fa-link
+                          i.anzhiyufont.anzhiyu-icon-link
                           | 链接
                       if item.from
                         .bber-info-from
-                          i.fas.fa-fire
+                          i.anzhiyufont.anzhiyu-icon-fw-fire
                           span=item.from
                     .bber-reply(onclick="rm.rightMenuCommentText(" + `'${item.content}'` + ")")
-                      i.fa-solid.fa-message
+                      i.anzhiyufont.anzhiyu-icon-message
     #bber-tips(style='color: var(--anzhiyu-secondtext);')
       | - 只展示最近30条短文 -

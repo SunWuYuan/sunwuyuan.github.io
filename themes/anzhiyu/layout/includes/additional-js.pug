@@ -1,6 +1,4 @@
 div
-  //- jquery
-  script(src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js")
   script(src=url_for(theme.asset.utils))
   script(src=url_for(theme.asset.main))
 
@@ -71,7 +69,7 @@ div
       != partial("includes/third-party/newest-comments/index", {}, { cache: true })
   //- 气泡效果
   if theme.bubble.enable
-    script(async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/bubble/bubble.js")
+    script(async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js")
   if theme.visitorMail.enable
     - const mail = theme.visitorMail.mail
     script.
@@ -88,6 +86,8 @@ div
   script(async data-pjax src=url_for(theme.asset.categoryBar))
   //- 即刻依赖waterfall
   script(async data-pjax src=url_for(theme.asset.waterfall))
+  //- 文章二维码
+  script(src='https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js')
   //- 右键菜单
   != partial("includes/anzhiyu/rightmenu-js.pug", {}, { cache: true })
   include ./anzhiyu/anzhiyu-js.pug
@@ -100,9 +100,9 @@ div
       LA.init({id: "#{ck}", ck: "#{ck}"});
       new LingQue.Monitor().init({id: "#{theme.LA.LingQueMonitorID}", sendSuspicious:true});
   //- iconfont依赖
-  script(async src=url_for(theme.asset.iconfont_js))
-  if theme.iconfont
-    script(async src=url_for(theme.iconfont))
+  link(rel="stylesheet" href=url_for(theme.asset.ali_iconfont_css))
+  if (theme.icons && theme.icons.ali_iconfont_js)
+    script(async src=url_for(theme.icons.ali_iconfont_js))
 
   != fragment_cache('injectBottom', function(){return injectHtml(theme.inject.bottom)})
 
@@ -122,7 +122,7 @@ div
   if theme.busuanzi.site_uv || theme.busuanzi.site_pv || theme.busuanzi.page_pv
     script(async data-pjax src= theme.asset.busuanzi || '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
 
-  if is_current("/")
+  if is_current("/") && theme.greetingBox.enable
     #greetingBox 
     script.
       (()=>{

@@ -13,7 +13,6 @@ li details.folding-tag summary {
 }
 
 details.folding-tag {
-  background: transparent !important;
   transition: border 0s ease !important;
   border: none !important;
 }
@@ -30,10 +29,11 @@ details.folding-tag[open] > summary {
 }
 details.folding-tag > summary {
   border: var(--style-border) !important;
-  background: var(--anzhiyu-card-bg) !important;
+  background: var(--anzhiyu-card-bg);
   border-radius: 14px !important;
   box-shadow: var(--anzhiyu-shadow-border);
   color: var(--font-color) !important;
+  user-select: none;
 }
 details.folding-tag > summary::marker {
   color: var(--anzhiyu-main);

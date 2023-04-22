@@ -27,7 +27,8 @@
 
         &:not(.simple)
           background: lighten(lookup('$tagsP-' + $type + '-color'), 85%) !important
-
+      &::before
+        color: lookup('$tagsP-' + $type + '-color')
       & > .note-icon
         color: lookup('$tagsP-' + $type + '-color')
 
@@ -82,7 +83,10 @@
         top: calc(50% - .95em)
         left: .8em
         font-size: larger
-        @extend .fontawesomeIcon
+        if hexo-config('icons.fontawesome')
+          @extend .fontawesomeIcon
+        else
+          @extend .anzhiyufont
 
   for $type in $note-types
     &.{$type}

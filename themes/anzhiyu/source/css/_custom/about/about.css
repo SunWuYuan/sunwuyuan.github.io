@@ -165,7 +165,6 @@ body[data-type="about"] #web_bg {
 #about-page .about-statistic {
   min-height: 380px;
   width: 39%;
-  background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/23/632d634f8376d.jpg) no-repeat top;
   background-size: cover;
   color: var(--anzhiyu-white);
   overflow: hidden;
@@ -247,7 +246,7 @@ body[data-type="about"] #web_bg {
 }
 .author-content-item .card-content .banner-button-group .banner-button {
   height: 40px;
-  width: 124px;
+  width: 140px;
   border-radius: 20px;
   justify-content: center;
   background: var(--anzhiyu-card-bg);
@@ -259,12 +258,21 @@ body[data-type="about"] #web_bg {
   cursor: pointer;
   border-bottom: 0 !important;
 }
-.author-content-item .card-content .banner-button-group .banner-button i {
+.author-content-item .card-content .banner-button-group .banner-button i,
+.author-content-item .card-content .banner-button-group .banner-button svg {
   margin-right: 8px;
   font-size: 1rem;
 }
-#about-page .author-content-item .card-content .banner-button-group .banner-button i {
+#about-page .author-content-item .card-content .banner-button-group .banner-button i,
+#about-page .author-content-item .card-content .banner-button-group .banner-button svg {
   font-size: 1.5rem;
+  margin-right: 0;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .author-content-item .card-content .banner-button-group .banner-button:hover {
@@ -272,8 +280,12 @@ body[data-type="about"] #web_bg {
   color: var(--anzhiyu-white);
   border-radius: 20px !important;
 }
+.author-content-item .card-content .banner-button-group .banner-button:hover i,
+.author-content-item .card-content .banner-button-group .banner-button:hover svg .author-content-item.personalities {
+  background: none !important;
+}
+
 .author-content-item.personalities {
-  position: relative;
   width: 59%;
 }
 
@@ -554,6 +566,8 @@ body[data-type="about"] #web_bg {
 .author-content-item.comic-content .comic-item .comic-item-cover img {
   height: 100%;
   transition: 0.8s;
+  max-width: none;
+  border-radius: 0px;
 }
 .author-content-item.comic-content::after {
   box-shadow: 0 -48px 203px 11px #fbe9b8 inset;
@@ -584,6 +598,12 @@ body[data-type="about"] #web_bg {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+@media screen and (max-width: 1025px) {
+  .author-content-item.personalities .image {
+    width: 180px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -620,18 +640,18 @@ body[data-type="about"] #web_bg {
     height: 95%;
   }
   .author-content-item.personalities {
-    height: 170px;
+    height: 200px;
   }
   .post-tips {
     left: auto;
   }
   .author-content-item.personalities .image {
-    width: 90px;
+    width: 125px;
   }
   .site-card-group > a {
     width: 100% !important;
   }
-  .post-reward {
+  body[data-type="about"] .post-reward {
     display: none;
   }
   .reward-list-item {
@@ -650,16 +670,23 @@ body[data-type="about"] #web_bg {
     bottom: 1rem;
   }
   .author-content-item .card-content .banner-button-group .banner-button {
-    background: 0 0;
+    background: none;
     padding: 0;
+    width: auto;
   }
-  .author-content-item .card-content .banner-button-group .banner-button i {
+  .author-content-item .card-content .banner-button-group .banner-button i,
+  .author-content-item .card-content .banner-button-group .banner-button svg {
     margin-right: 0;
     font-size: 1.5rem;
     background: white;
     border-radius: 50%;
     padding: 6px;
     margin-left: 80px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .author-content-item .card-content .banner-button-group .banner-button:hover i {
     background: var(--anzhiyu-background) !important;

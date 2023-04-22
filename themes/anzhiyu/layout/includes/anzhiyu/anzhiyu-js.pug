@@ -12,10 +12,11 @@ script(data-pjax).
   // 当前默认播放列表
   var defaultPlayMusicList = [];
 
-  document.getElementById("page-name").innerText = document.title.split(" | 孙悟元")[0];
+  document.getElementById("page-name").innerText = document.title.split(" | 安知鱼")[0];
   anzhiyu.initIndexEssay();
   anzhiyu.changeTimeInEssay();
   anzhiyu.removeBodyPaceClass();
+  anzhiyu.qrcodeCreate();
   anzhiyu.changeTimeInAlbumDetail();
   anzhiyu.reflashEssayWaterFall();
   anzhiyu.sayhi();

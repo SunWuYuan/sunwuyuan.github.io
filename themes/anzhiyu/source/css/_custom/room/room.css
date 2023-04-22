@@ -19,12 +19,13 @@ body[data-type="room"] #page .page-title {
   background: var(--anzhiyu-card-bg);
   color: var(--font-color);
 }
-#room_page .banner-button-group .banner-button i {
+#room_page .banner-button-group .banner-button i,
+#room_page .banner-button-group .banner-button svg {
   margin-right: 8px;
 }
 #room_page .banner-button-group .banner-button {
   height: 40px;
-  width: 124px;
+  width: 140px;
   border-radius: 20px;
   justify-content: center;
   color: var(--anzhiyu-white);

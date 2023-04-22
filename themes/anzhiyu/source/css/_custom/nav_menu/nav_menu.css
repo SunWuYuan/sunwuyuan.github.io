@@ -146,7 +146,7 @@ ul.menus_item_child {
     font-weight: 700;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   #page-header.nav-fixed #nav #page-name:hover:after {
     opacity: 1;
   }
@@ -301,8 +301,9 @@ center#name-container {
   margin: 4px 8px;
   padding: 4px 8px !important;
   transition: 0.3s;
-  border-radius: 8px;
   width: 150px;
+  border-radius: 8px !important;
+  transition: 0.2s !important;
 }
 .back-home-button .back-menu-list .back-menu-item .back-menu-item-text {
   font-size: var(--global-font-size);
@@ -331,9 +332,7 @@ center#name-container {
 .back-home-button .back-menu-list .back-menu-item:hover .back-menu-item-text {
   color: var(--anzhiyu-white);
 }
-.back-home-button .back-menu-list .back-menu-item {
-  border-radius: 8px !important;
-}
+
 .back-menu-item-icon.loading img {
   width: 25px;
 }
@@ -367,7 +366,7 @@ center#name-container {
   font-weight: bold;
 }
 
-#menus .menus_item .menus_item_child .site-page.child.faa-parent.animated-hover .fa-fw.fa-fan.faa-tada {
+#menus .menus_item .menus_item_child .site-page.child.faa-parent.animated-hover .anzhiyu-icon-fan.faa-tada {
   animation: rotate 1.6s linear infinite;
 }
 
@@ -399,6 +398,9 @@ center#name-container {
   transition: 0.3s ease-in;
   letter-spacing: normal;
 }
+.post #blog_name #site-name .title {
+  transition: 0s;
+}
 
 #blog_name #site-name:hover i {
   transform: scale(1);
@@ -407,6 +409,13 @@ center#name-container {
 #page-header #nav #nav-right .nav-button a i,
 #page-header #nav #nav-left .nav-button a i {
   line-height: 1;
+  transition: background 0.35s ease-in-out, color 0.2s ease-in-out;
+}
+
+#page-header #nav #nav-right .nav-button a:hover i,
+#page-header #nav #nav-left .nav-button a:hover i {
+  color: var(--anzhiyu-white);
+  transition: background 0.35s ease-in-out, color 0.2s ease-in-out;
 }
 
 /* 返回顶部按钮样式 */

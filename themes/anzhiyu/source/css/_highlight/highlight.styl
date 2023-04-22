@@ -1,5 +1,6 @@
 $highlight_theme = hexo-config('highlight_theme')
 wordWrap = $highlight_enable && !$highlight_line_number && hexo-config('code_word_wrap')
+wordWrapPrismjs = $prismjs_enable && !$prismjs_line_number && hexo-config('code_word_wrap')
 
 @require 'theme'
 
@@ -27,7 +28,7 @@ $code-block
   color: var(--hl-color)
   line-height: $line-height-code-block
 
-  if wordWrap
+  if (wordWrap || wordWrapPrismjs)
     counter-reset: line
     white-space: pre-wrap
 
@@ -171,7 +172,7 @@ $code-block
   if hexo-config('highlight_height_limit')
     .code-expand-btn
       position: absolute
-      bottom: 0
+      bottom: 1px
       z-index: 10
       width: 100%
       background: var(--hlexpand-bg)
