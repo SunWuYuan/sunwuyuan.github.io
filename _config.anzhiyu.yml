@@ -7,11 +7,11 @@ menu:
    友链:
      友人帐: /link/ || fas fa-link
   #   朋友圈: /fcircle/ || fab fa-artstation
-  #   留言板: /comments/ || fas fa-envelope
+     留言板: /comments/ || fas fa-envelope
 
   # 我的:
   #   音乐馆: /music/ || fas fa-music
-  #   追番页: /bangumis/ || icon-bilibili1
+     追番页: /bangumis/ || icon-bilibili1
      相册集: /album/ || fas fa-images
   #   小空调: /air-conditioner/ || fas fa-fan
 
@@ -233,7 +233,10 @@ reward:
   QR_code:
     - img: https://img.wuyuan.dev/wxzf.png
       link:
-      text: wechat
+      text: 微信支付
+    - img: https://wuyuan.dev/wechat-follow/img/qrcode.png
+      link: https://wuyuan.dev/wechat-follow/
+      text: 微信公众号
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -918,9 +921,9 @@ home_top:
     swiper_init: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper_init.js # swiper初始化方法
   banner:
     tips: 查看
-    title: 孙悟元在B站
+    title: 更多文章
     image: https://img02.anzhiy.cn/adminuploads/1/2023/03/27/64215d46a1ca6.webp
-    link: https://bilibili.com
+    link: https://wuyuan.dev
 
 # 朋友圈配置
 friends_vue:
