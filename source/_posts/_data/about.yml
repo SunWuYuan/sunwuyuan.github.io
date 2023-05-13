@@ -12,7 +12,7 @@
       - 生活
       - 程序
       - 体验
-  helloAbout: 知识创造一切
+  helloAbout: Hello
   skillsTips:
     tips: 技能
     title: 开启创造力
@@ -48,7 +48,7 @@
     maxim_bottom: 创造一切
   buff:
     buff_tips: 特长
-    buff_top: 脑回路新奇的 酸菜鱼(没错
+    buff_top: 脑回路新奇的地球人
     buff_bottom: 离谱指数99+
   game:
     game_tips: 爱好游戏
