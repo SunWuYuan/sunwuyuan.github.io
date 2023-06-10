@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 if site.data.essay
   each i in site.data.essay
     #essay_page
@@ -15,24 +14,6 @@ if site.data.essay
       #bber
         section.timeline.page-1
           ul#waterfall.list
-=======
-if site.data.essay && theme.essay.enable
-  #essay_page
-    .author-content.author-content-item.essayPage.single(style = theme.essay.enable ? `background: url(${theme.essay.top_background}) left 28% / cover no-repeat;` : "")
-      .card-content
-        .author-content-item-tips 即刻短文
-        span.author-content-item-title 创造一切的路上
-        .content-bottom
-          .tips 使用 即刻短文静态部署版 构建， 🤔 与 😏 来自 孙悟元
-        .banner-button-group
-          a.banner-button(onclick='pjax.loadUrl("/about/")')
-            i.fas.fa-circle-right(style='font-size: 1.5rem')
-            span.banner-button-text 关于我
-    #bber
-      section.timeline.page-1
-        ul#waterfall.list
-          each i in site.data.essay
->>>>>>> Stashed changes
             each item, index in i.essay_list
               if index < i.limit
                 li.bber-item
