@@ -75,7 +75,7 @@ blockquote {
     display: block
     margin: 0 auto 20px
     max-width: 100%
-    transition: filter 375ms ease-in .2s
+    transition: .3s
     border-radius: 8px
 
   p
@@ -104,7 +104,7 @@ blockquote {
       position: relative;
       padding: 0px;
       border: none;
-      line-height: 1;
+      line-height: 2;
       font-size: 2rem;
       border-radius: 8px !important;
       text-decoration: none;
@@ -118,7 +118,7 @@ blockquote {
       position: relative;
       padding: 0px;
       border: none;
-      line-height: 1;
+      line-height: 2;
       font-size: 1.8rem;
       border-radius: 8px !important;
       text-decoration: none;
@@ -132,7 +132,7 @@ blockquote {
       position: relative;
       padding: 0px;
       border: none;
-      line-height: 1;
+      line-height: 2;
       font-size: 1.3rem;
       border-radius: 8px !important;
       text-decoration: none;
@@ -268,7 +268,7 @@ blockquote {
       display: flex;
       align-items: center;
     &__original,&__reprint
-      background: var(--anzhiyu-fontcolor);
+      background: var(--anzhiyu-main);
       color: var(--anzhiyu-card-bg);
       padding: 0.2rem 1rem;
       font-size: .8rem;
@@ -286,6 +286,7 @@ blockquote {
       right: -20px;
       font-size: 8.3em;
       z-index: -1;
+      color: var(--anzhiyu-main)
       @media screen and (min-width: 1365px)
         z-index: 0;
         
@@ -298,8 +299,12 @@ blockquote {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-weight: 500
+        
+        &:hover
+          color: var(--anzhiyu-fontcolor)
       &-meta
-        color: $light-blue
+        color: var(--anzhiyu-main)
         font-weight: bold
         min-width: 75px;
 
@@ -332,8 +337,8 @@ blockquote {
           +maxWidth768()
             display: none
           &:hover
-            background: var(--anzhiyu-theme);
-            border-color: var(--anzhiyu-theme);
+            background: var(--anzhiyu-main);
+            border-color: var(--anzhiyu-main);
             color: var(--anzhiyu-white);
 
   .post-outdate-notice
@@ -464,7 +469,7 @@ blockquote {
   margin: 10px 16px 0px 5px;
   width: fit-content;
   line-height: 1;
-  background: rgba(48, 52, 63, 0.75);
+  background: var(--anzhiyu-main)
   color: #fff;
   border-radius: 6px;
   user-select: none;

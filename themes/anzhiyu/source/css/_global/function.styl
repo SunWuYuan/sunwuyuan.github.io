@@ -85,6 +85,10 @@ if hexo-config('icons.fontawesome')
       cursor: pointer
       transition: all .3s ease-out
 
+maxWidth500()
+  @media screen and (max-width: 500px)
+    {block}
+
 maxWidth600()
   @media screen and (max-width: 600px)
     {block}
@@ -99,6 +103,10 @@ minWidth768()
 
 maxWidth1200()
   @media screen and (max-width: 1200px)
+    {block}
+
+maxWidth1400()
+  @media screen and (max-width: 1400px)
     {block}
 
 maxWidth900()

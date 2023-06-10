@@ -245,7 +245,7 @@ script.
           rm.hideRightMenu();
           // e.preventDefault();
         },
-        false
+        { passive: true }
       );
     }
     if (document.getElementById("rightMenu")) {
@@ -257,7 +257,7 @@ script.
           rm.hideRightMenu();
           // e.preventDefault();
         },
-        false
+        { passive: true }
       );
     }
   }
@@ -269,8 +269,10 @@ script.
     rm.hideRightMenu();
   };
 
-  rm.copyPageUrl = function () {
-    var url = window.location.href;
+  rm.copyPageUrl = function (url) {
+    if (!url) {
+      url = window.location.href;
+    }
     rm.copyUrl(url);
     anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
     rm.hideRightMenu();
@@ -439,7 +441,7 @@ script.
     });
 
     document.getElementById("menu-newwindow").addEventListener("click", function () {
-      window.open(domhref);
+      window.open(domhref, "_blank");
       rm.hideRightMenu();
     });
 
@@ -450,7 +452,7 @@ script.
     });
 
     document.getElementById("menu-newwindowimg").addEventListener("click", function () {
-      window.open(domImgSrc);
+      window.open(domImgSrc, "_blank");
       rm.hideRightMenu();
     });
 
