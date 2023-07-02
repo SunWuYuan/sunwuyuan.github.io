@@ -97,6 +97,7 @@
       margin: 0 -20% 0 auto;
       overflow: hidden;
       margin-bottom: 0;
+      user-select: none
       transform: rotate(10deg) translateY(-10%) scale(2);
       if !hexo-config('post_meta.post.mainTone')
         filter: blur(10px) brightness(60%);
@@ -470,10 +471,14 @@
 
           a
             display: inline-block
-            padding: 8px 16px
+            padding: .5625rem 1rem
             width: 100%
             color: var(--font-color) !important
             text-shadow: none !important
+            &:hover
+              color: var(--anzhiyu-white) !important
+              padding: .125rem 1.25rem;
+              transform: scale(1) !important;
 
   &.hide-menu
     #toggle-menu
@@ -573,6 +578,7 @@
   left: 0
   bottom: -11px
   z-index: 5
+  pointer-events: none
 
 .waves-area .waves-svg
   width: 100%

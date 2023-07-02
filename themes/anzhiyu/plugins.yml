@@ -208,4 +208,8 @@ waterfall:
 ali_iconfont_css:
   name: anzhiyu-theme-static
   file: icon/ali_iconfont_css.css
-  version: 1.1.0
+  version: 1.1.4
+accesskey_js:
+  name: anzhiyu-theme-static
+  file: accesskey/accesskey.js
+  version: 1.1.5
