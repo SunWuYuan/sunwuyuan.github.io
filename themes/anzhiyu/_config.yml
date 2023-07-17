@@ -317,7 +317,7 @@ waline:
   option:
     meta: ["nick", "mail", "link"]
     locale:
-      placeholder: 生活明朗，万物可爱
+      placeholder: 知识创造一切
 
 # Twikoo
 # https://github.com/imaegoo/twikoo

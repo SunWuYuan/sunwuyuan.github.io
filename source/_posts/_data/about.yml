@@ -6,7 +6,7 @@
   aboutsiteTips:
     tips: 追求
     title1: 源于
-    title2: 热爱而去 感受
+    title2: 希望而去 探索
     word:
       - 世界
       - 生活
@@ -21,7 +21,7 @@
     title: 无限进步
     item:
       - 初中
-    img: https://cdn.wuyuan.dev/sitelogo.png
+    img: /img/edu.png
   statistic:
     link: /archives
     text: 文章隧道
@@ -57,23 +57,24 @@
     game_bg: /img/16938d74470a659621494fe740121ada_w1920_h1080_s2181.jpg
   comic:
     comic_tips: 喜欢看
-    comic_title: 柯南.......
+    comic_title: 名侦探柯南
     comic_list:
-      - name: 还没改
-        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/63988658aa1b1.webp
-      - name: 还没改
-        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/6398864e572ed.webp
-      - name: 还没改
-        href: https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/639886315d658.webp
-      - name: 还没改
-        href: https://www.bilibili.com/bangumi/media/md22718131/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/639886403d472.webp
-      - name: 还没改
-        href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/6398862649585.webp
+      - name: 万圣节的新娘
+        href: https://www.bilibili.com/bangumi/play/ss44141
+        cover: /img/7d516be6af5220282c92f6eb4b0b73418c20cbf5.png
+
+      - name: 贝克街的亡灵
+        href: https://www.bilibili.com/bangumi/play/ss5234
+        cover: /img/ea90b97ba8ea52b1de7ffc2be10fca4c03593e58.jpg
+      - name: 计时引爆摩天楼
+        href: https://www.bilibili.com/bangumi/play/ss33542
+        cover: /img/0e3489174b2b16d1ce51849f6803822ba94ce339.jpg
+      - name: 天空的遇难船
+        href: https://www.bilibili.com/bangumi/play/ss4666
+        cover: /img/f241055ecd4bea73f4313df72c431b6db9cdd49a.jpg
+      - name: 万圣节的新娘
+        href: https://www.bilibili.com/bangumi/play/ss6365
+        cover: /img/f15c58e0c07c466a4d4b1ccfac5aaf0b9cfaff75.jpg
   like:
     like_tips: 关注偏好
     like_title: 数码科技
