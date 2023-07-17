@@ -33,7 +33,7 @@ nav:
           icon: /img/favicon.ico
     - title: 项目
       item:
-        - name: 安知鱼图床
+        - name: 孙悟元图床
           link: https://image.anheyu.com/
           icon: https://image.anheyu.com/favicon.ico
 
@@ -163,6 +163,7 @@ post_meta:
     tags: true # true or false 文章页是否显示标籤
     label: true # true or false 显示描述性文字
     mainTone: false # true or false 文章顶部图片是否使用主色调
+    unread: false # true or false 文章未读功能
 
 # wordcount (字数统计)
 # see https://butterfly.js.org/posts/ceeb73f/#字数统计
@@ -384,9 +385,9 @@ footer:
   runtime:
     enable: true
     launch_time: 04/01/2021 00:00:00 # 网站上线时间
-    work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
+    work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/孙悟元-上班摸鱼中.svg
     work_description: 距离月入25k也就还差一个大佬带我~
-    offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
+    offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/孙悟元-下班啦.svg
     offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
@@ -396,7 +397,7 @@ footer:
       - link: https://hexo.io/ #徽标指向网站链接
         shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
         message: 博客框架为Hexo_v5.4.0 #徽标提示语
-      - link: https://anheyu.com/
+      - link: https://blog.anheyu.com/
         shields: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg
         message: 本站使用AnZhiYu主题
       # - link: https://www.dogecloud.com/
@@ -800,6 +801,9 @@ translate:
 
 # Read Mode (閲读模式)
 readmode: true
+
+# 中控台
+centerConsole: true
 
 # dark mode
 darkmode:
