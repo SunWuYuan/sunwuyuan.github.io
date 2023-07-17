@@ -28,8 +28,8 @@
   map:
     title: 我现在住在
     StrengthenTitle: 中国，长沙市
-    background: https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632e6f48981d8.jpg
-    backgroundDark: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330ebf1f3e65.jpg
+    background: /img/632e6f48981d8.jpg
+    backgroundDark: /img/6330ebf1f3e65.jpg
   selfInfo:
     selfInfoTips1: 生于
     selfInfoContentYear: 2009
