@@ -206,7 +206,7 @@ error_img:
 error_404:
   enable: true
   subtitle: "请尝试站内搜索寻找文章"
-  background: https://bu.dusays.com/2023/05/08/645907596997d.gif
+  background: #
 
 post_meta:
   page: # Home Page
@@ -427,16 +427,16 @@ footer:
     since: 2020
   custom_text:
   runtime:
-    enable: false
+    enable: true
     launch_time: 04/01/2021 00:00:00 # 网站上线时间
-    work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
-    work_description: 距离月入25k也就还差一个大佬带我~
-    offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
-    offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
+    work_img: https://cdn.wuyuan.dev/sitelogo.png
+    work_description: 嘻嘻
+    offduty_img:  https://cdn.wuyuan.dev/sitelogo.png
+    offduty_description: 嘻嘻
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
-    enable: false
+    enable: true
     list:
       - link: https://hexo.io/ #徽标指向网站链接
         shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
@@ -447,92 +447,82 @@ footer:
       # - link: https://www.dogecloud.com/
       #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
       #   message: 本站使用多吉云为静态资源提供CDN加速
-      # - link: https://github.com/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
-      #   message: 本站项目由Github托管
-      # - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
-      #   message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
+       - link: https://github.com/
+         shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
+         message: 本站项目由Github托管
+       - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
+         shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
+         message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
   socialBar:
-    enable: false
+    enable: true
     centerImg:
     left:
-      # - title: email
-      #   link: mailto:anzhiyu-c@qq.com
-      #   icon: anzhiyu-icon-envelope
-      # - title: 微博
-      #   link: https://weibo.com/u/6378063631
-      #   icon: anzhiyu-icon-weibo
-      # - title: facebook
-      #   link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
-      #   icon: anzhiyu-icon-facebook1
-      # - title: RSS
-      #   link: atom.xml
-      #   icon: anzhiyu-icon-rss
+       - title: email
+         link: mailto:sun@wuyuan.dev
+         icon: anzhiyu-icon-envelope
+       - title: 微博
+         link: https://weibo.com/u/7444708319
+         icon: anzhiyu-icon-weibo
+       - title: RSS
+         link: atom.xml
+         icon: anzhiyu-icon-rss
     right:
-      # - title: Github
-      #   link: https://github.com/anzhiyu-c
-      #   icon: anzhiyu-icon-github
-      # - title: Bilibili
-      #   link: https://space.bilibili.com/372204786
-      #   icon: anzhiyu-icon-bilibili
-      # - title: 抖音
-      #   link: https://v.douyin.com/DwCpMEy/
-      #   icon: anzhiyu-icon-tiktok
-      # - title: CC
-      #   link: /copyright
-      #   icon: anzhiyu-icon-copyright-line
+       - title: Github
+         link: https://github.com/sunwuyuan
+         icon: anzhiyu-icon-github
+       - title: Bilibili
+         link: https://space.bilibili.com/661404066
+         icon: anzhiyu-icon-bilibili
+       - title: CC
+         link: /copyright
+         icon: anzhiyu-icon-copyright-line
   list:
-    enable: false
+    enable: true
     randomFriends: 3
     project:
-      # - title: 服务
-      #   links:
-      #     - title: 51la统计
-      #       link: https://v6.51.la/
-      #     - title: 十年之约
-      #       link: https://www.foreverblog.cn/
-      #     - title: 开往
-      #       link: https://github.com/travellings-link/travellings
-      # - title: 主题
-      #   links:
-      #     - title: 文档
-      #       link: /docs/
-      #     - title: 源码
-      #       link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-      #     - title: 更新日志
-      #       link: /update/
-      # - title: 导航
-      #   links:
-      #     - title: 即刻短文
-      #       link: /essay/
-      #     - title: 友链文章
-      #       link: /fcircle/
-      #     - title: 留言板
-      #       link: /comments/
-      # - title: 协议
-      #   links:
-      #     - title: 隐私协议
-      #       link: /privacy/
-      #     - title: Cookies
-      #       link: /cookies/
-      #     - title: 版权协议
-      #       link: /copyright/
+       - title: 服务
+         links:
+           - title: OurWorld
+             link: https://owscr.link
+       - title: 主题
+         links:
+           - title: 文档
+             link: /docs/
+           - title: 源码
+             link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+           - title: 更新日志
+             link: /update/
+       - title: 导航
+         links:
+           - title: 即刻短文
+             link: /essay/
+           - title: 友链文章
+             link: /fcircle/
+           - title: 留言板
+             link: /comments/
+       - title: 协议
+         links:
+           - title: 隐私协议
+             link: https://wuyuan.dev/privacy-policy/
+           - title: Cookies
+             link: /cookies/
+           - title: 版权协议
+             link: /copyright/
   footerBar:
     enable: true
     authorLink: /
     cc: 
-      enable: false
+      enable: true
       link: /copyright
     linkList:
-      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-        text: 主题
+      - link: https://owscr.link
+        text: Ourworld
       # - link: https://image.anheyu.com
       #   text: 图床
       # - link: https://beian.miit.gov.cn/
       #   text: 湘ICP备-xxxxxxx号
     subTitle:
-      enable: false
+      enable: true
       # Typewriter Effect (打字效果)
       effect: true
       # Effect Speed Options (打字效果速度参数)
@@ -550,7 +540,7 @@ footer:
       source: 1
       # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
       sub:
-        # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
+         - 知识创造一切
 
 # Analysis
 # --------------------------------------
@@ -776,7 +766,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: # 自定义头像
+  avatar: https://cdn.wuyuan.dev/sitelogo.png
 
 # aside (侧边栏)
 # --------------------------------------
@@ -1150,7 +1140,7 @@ post_head_ai_description:
   gptName: 悟小元
   mode: tianli # 默认模式 可选值: tianli/local
   switchBtn: false # 可以配置是否显示切换按钮 以切换tianli/local
-  btnLink: https://afdian.net/item/886a79d4db6711eda42a52540025c377
+  btnLink: https://afdian.net/a/wuyuandev
   randomNum: 3 # 按钮最大的随机次数，也就是一篇文章最大随机出来几种
   basicWordCount: 1000 # 最低获取字符数, 最小1000, 最大1999
   key: sKnkVqOZuAhD8arRH5Io
