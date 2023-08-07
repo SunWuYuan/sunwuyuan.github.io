@@ -11,22 +11,22 @@ if (description && ai)
   .post-ai-description
     .ai-title
       i.anzhiyufont.anzhiyu-icon-bilibili
-      .ai-title-text 文章摘要
+      .ai-title-text AI-摘要
       if (switchBtn)
         #ai-Toggle 切换
       i.anzhiyufont.anzhiyu-icon-arrow-rotate-right
       #ai-tag
         if mode == "tianli"
-          = "悟小元"
+          = "Tianli GPT"
         else
-          = gptName + " 悟小元"
+          = gptName + " GPT"
     .ai-explanation AI初始化中...
     .ai-btn-box
       .ai-btn-item 介绍自己
       .ai-btn-item 生成本文简介
       .ai-btn-item 推荐相关文章
       .ai-btn-item 前往主页
-      .ai-btn-item#go-tianli-blog 前往主页
+      .ai-btn-item#go-tianli-blog 前往tianli博客
     script(data-pjax).
       (function(){
         // 当前随机到的ai摘要到index
@@ -159,7 +159,7 @@ if (description && ai)
               let result;
               if (response.status === 403) {
                 result = {
-                  summary: "403 系统错误"
+                  summary: "403 refer与key不匹配，本地无法显示。"
                 }
               } else if (response.status === 500) {
                 result = {
@@ -219,9 +219,9 @@ if (description && ai)
         const ai_btn_item = document.querySelectorAll(".ai-btn-item");
         function Introduce() {
           if (mode == "tianli") {
-            startAI("我是悟小元，点击下方的按钮，让我生成本文简介、推荐相关文章等。")
+            startAI("我是文章辅助AI: TianliGPT，点击下方的按钮，让我生成本文简介、推荐相关文章等。")
           } else {
-            startAI("我是悟小元，点击下方的按钮，让我生成本文简介、推荐相关文章等。")
+            startAI("我是文章辅助AI: #{gptName} GPT，点击下方的按钮，让我生成本文简介、推荐相关文章等。")
           }
         }
         function aiTitleRefreshIconClick() {
@@ -264,11 +264,11 @@ if (description && ai)
         function changeShowMode() {
           if (mode === "tianli") {
             mode = "local";
-            document.getElementById("ai-tag").innerHTML = "悟小元";
+            document.getElementById("ai-tag").innerHTML = "#{gptName} GPT";
             aiAbstract(#{basicWordCount});
           } else {
             mode = "tianli";
-            document.getElementById("ai-tag").innerHTML = "悟小元";
+            document.getElementById("ai-tag").innerHTML = "Tianli GPT";
 
             const truncateDescription = ("#{title}" + "#{description}").trim().substring(0, #{basicWordCount});
             let value = Math.floor(Math.random() * #{randomNum}) + #{basicWordCount};
@@ -298,10 +298,10 @@ if (description && ai)
           if (mode === "tianli") {
             document.querySelectorAll(".ai-btn-item").forEach(item => item.style.display = "none");
             document.getElementById("go-tianli-blog").style.display = "block";
-            startAI("你好，我是悟小元")
+            startAI("你好，我是Tianli开发的摘要生成助理TianliGPT，是一个基于GPT-4的生成式AI。我在这里只负责摘要的预生成和显示，你无法与我直接沟通，如果你也需要一个这样的AI摘要接口，可以在下方购买。（暂未开放购买，敬请期待）")
           } else {
             document.getElementById("go-tianli-blog").style.display = "none";
-            startAI("你好，我是悟小元，我在这里只负责摘要的预生成和显示，你无法与我直接沟通。")
+            startAI("你好，我是本站摘要生成助理#{gptName} GPT，是一个基于GPT-4的生成式AI。我在这里只负责摘要的预生成和显示，你无法与我直接沟通。")
           }
 
         });

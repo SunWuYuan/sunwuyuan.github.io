@@ -76,12 +76,13 @@
   --anzhiyu-blue-main: #3b70fc;
   --style-border-hover: 1px solid var(--anzhiyu-main);
   --style-border-dashed: 1px dashed var(--anzhiyu-theme-op);
-  --style-border-avatar: 4px solid var(--anzhiyu-background);
+  --style-border-avatar: 5px solid var(--anzhiyu-white);
   --style-border-always: 1px solid var(--anzhiyu-card-border);
   --style-border-none: 1px solid transparent;
   --style-border-deep-ash: 1px solid #d0d7de;
   --style-border-hover-always: 1px solid var(--anzhiyu-main);
   --anzhiyu-main-none: #b8b8b800 !important;
+  --anzhiyu-wihite-font: #fff
 
 [data-theme="light"]
   --anzhiyu-meta-theme-post-color: #fff;
@@ -118,6 +119,7 @@
   --anzhiyu-card-border: #e3e8f7;
   --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0.00);
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0.00);
+  --anzhiyu-wihite-font: #fff
 
 [data-theme="dark"]
   --anzhiyu-meta-theme-post-color: #1d1e22;
@@ -128,7 +130,7 @@
   --global-bg: #18171d;
   --anzhiyu-theme: $theme-dark-color;
   --anzhiyu-theme-deep: #0076e5;
-  --anzhiyu-theme-op: #0084ff23;
+  --anzhiyu-theme-op: #f2b94b23;
   --anzhiyu-blue: #0084ff;
   --anzhiyu-red: #ff3842;
   --anzhiyu-pink: #ff7c7c;
@@ -155,6 +157,7 @@
   --anzhiyu-card-border: #42444a;
   --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0.0);
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0.0);
+  --anzhiyu-wihite-font: #f6f6f6
 
 body
   position: relative
@@ -332,6 +335,7 @@ if hexo-config('lazyload.enable') && hexo-config('lazyload.blur') && !hexo-confi
 
     &[data-lazy-src].error
       filter: none
+      opacity 1 !important
 
 // lazyload progressive
 if hexo-config('lazyload.enable') && hexo-config('lazyload.progressive') && !hexo-config('lazyload.placeholder')
@@ -362,3 +366,9 @@ blockquote
 
   & > :last-child
     margin-bottom: 0 !important
+
+#single_top
+  padding: 1.875rem 1.5rem 0
+  max-width: 1400px
+  width 100%
+  margin 0 auto
