@@ -6,7 +6,7 @@ menu:
 
    友链:
      友人帐: /link/ || anzhiyu-icon-link
-     朋友圈: /fcircle/ || anzhiyu-icon-artstation
+     #朋友圈: /fcircle/ || anzhiyu-icon-artstation
      留言板: /comments/ || anzhiyu-icon-envelope
 
    我的:
@@ -69,7 +69,7 @@ social:
   # QQ: tencent://Message/?Uin=2268025923&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || icon-QQ1 || faa-tada
 
 author_status:
-  enable: false
+  enable: trues
   status: ✍️
   alias: writing_hand
   fallback_src: https://github.githubassets.com/images/icons/emoji/unicode/270d.png
@@ -80,9 +80,9 @@ author_status:
      - 🏠 智能家居小能手
      - 🔨 设计开发一条龙
      - 🤝 专修交互与设计
-    # - 🏃 脚踏实地行动派
-    # - 🧱 团队小组发动机
-    # - 💢 壮汉人狠话不多
+     - 🏃 脚踏实地行动派
+     - 🧱 团队小组发动机
+     - 💢 壮汉人狠话不多
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系统
@@ -381,7 +381,7 @@ valine:
 # https://waline.js.org/
 waline:
   serverURL: https://blog-waline-service.wuyuan.dev # Waline server address url
-  pageview: false
+  pageview: true
 
 
 # Chat Services
@@ -481,30 +481,16 @@ footer:
          links:
            - title: OurWorld
              link: https://owscr.link
-       - title: 主题
-         links:
-           - title: 文档
-             link: /docs/
-           - title: 源码
-             link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-           - title: 更新日志
-             link: /update/
        - title: 导航
          links:
-           - title: 即刻短文
-             link: /essay/
            - title: 友链文章
              link: /fcircle/
            - title: 留言板
              link: /comments/
        - title: 协议
          links:
-           - title: 隐私协议
+           - title: 隐私策略
              link: https://wuyuan.dev/privacy-policy/
-           - title: Cookies
-             link: /cookies/
-           - title: 版权协议
-             link: /copyright/
   footerBar:
     enable: true
     authorLink: /
@@ -599,7 +585,7 @@ site_verification:
 theme_color:
   enable: true
   main: "#3b70fc"
-  dark_main: "#f2b94b"
+  dark_main: "#3b70fc"
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
   text_selection: "#2128bd"
@@ -1033,7 +1019,7 @@ home_top:
   banner:
     tips: 查看
     title: 孙悟元
-    image: https://img02.anheyu.com/adminuploads/1/2023/03/27/64215d46a1ca6.webp
+    image: /img/aa439a005802d391038779b74f94e993_w1920_h1080_s8523.jpg
     link: https://wuyuan.dev
 
 # 朋友圈配置
