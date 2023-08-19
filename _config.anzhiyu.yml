@@ -24,7 +24,7 @@ menu:
 nav:
   enable: true
   travelling: false
-  clock: true
+  clock: false
   menu:
     - title: 网页
       item:
@@ -39,6 +39,11 @@ nav:
         - name: OurWorld
           link: https://ourworld.wuyuan.dev
           icon: /img/ow.png
+# mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
+# 注意： 仅网站首页变灰，其他页面正常显示
+mourn:
+  enable: false
+  days: [4-5, 5-12, 7-7, 9-18, 12-13]
 
 # Code Blocks (代码相关)
 # --------------------------------------
@@ -60,14 +65,12 @@ copy:
 
 # social settings (社交图标设置)
 # formal:
-#   icon: link || the description || Animation
+#   name: link || icon
 social:
-   Github: https://github.com/sunwuyuan || icon-gitHub || faa-tada
-  # Email: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2268025923@qq.com || icon-youxiang || faa-tada
-  # RSS: atom.xml || icon-rss || faa-tada
-  # BiliBili: https://space.bilibili.com/372204786 || icon-bilibili || faa-tada
-  # QQ: tencent://Message/?Uin=2268025923&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || icon-QQ1 || faa-tada
+   Github: https://github.com/sunwuyuan || anzhiyu-icon-github
+  # BiliBili: https://space.bilibili.com/372204786 || anzhiyu-icon-bilibili
 
+# 作者卡片 状态
 author_status:
   enable: trues
   status: ✍️
@@ -85,7 +88,7 @@ author_status:
      - 💢 壮汉人狠话不多
 
 # search (搜索)
-# see https://butterfly.js.org/posts/ceeb73f/#搜索系统
+# see https://blog.anheyu.com/posts/c27d.html#搜索系统
 # --------------------------------------
 
 # Algolia search
@@ -192,7 +195,7 @@ cover:
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
   # left/right/both
-  position: both
+  position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
     - /img/16938d74470a659621494fe740121ada_w1920_h1080_s2181.jpg
@@ -225,14 +228,14 @@ post_meta:
 
 # 主色调相关配置
 mainTone:
-  enable: false # true or false 文章是否启用获取图片主色调
+  enable: true # true or false 文章是否启用获取图片主色调
   mode: api # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取
   # 项目地址：https://github.com/anzhiyu-c/img2color-go
   api: https://img2color-go.192325.xyz/api?img= # mode为api时可填写
   cover_change: true # 整篇文章跟随cover修改主色调
 
 # wordcount (字数统计)
-# see https://butterfly.js.org/posts/ceeb73f/#字数统计
+# see https://blog.anheyu.com/posts/c27d.html#字数统计
 wordcount:
   enable: true
   post_wordcount: true
@@ -288,13 +291,13 @@ reward:
 
 # Post edit
 # Easily browse and edit blog source code online.
-post_edit:
+post_edit: # 目前仅可选择一个平台在线编辑
   enable: false
   # github: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   github: false
 
-  # yuque: https://www.yuque.com/usename/repo/
+  # yuque: https://www.yuque.com/user-name/repo-name/
   # 示例: https://www.yuque.com/yuque/yuque/
   # 你需要在语雀文章 Front Matter 添加参数 id 并确保其唯一性（例如 “id: yuque”, “id: 01”）
   yuque: false
@@ -383,6 +386,62 @@ waline:
   serverURL: https://blog-waline-service.wuyuan.dev # Waline server address url
   pageview: true
 
+  # 以下为可选配置，后续若有新增/修改配置参数可在此自行添加/修改
+  option:
+    pageSize: 10
+    requiredMeta: ["nick", "mail"]
+    login: enable
+    copyright: true
+    # turnstileKey: 
+    locale:
+      admin: 孙悟元
+      sofa: 欢迎使用！
+      placeholder: "知识创造一切"
+    #   reactionTitle: 就现在，表明你的态度！
+    #   reaction0: 0
+    #   reaction1: 1
+    #   reaction2: 2
+    #   reaction3: 3
+    #   reaction4: 4
+    #   reaction5: 5
+    #   level0: 0
+    #   level1: 1
+    #   level2: 2
+    #   level3: 3
+    #   level4: 4
+    #   level5: 5
+    #   level6: 6
+    #   level7: ...
+    # emoji:
+    #   [
+    #     "https://example.com/.../Sticker-100/",
+    #   ]
+    # reaction:
+    #   [
+    #     "https://example.com/.../Sticker-100/0.png",
+    #     "https://example.com/.../Sticker-100/1.png",
+    #     "https://example.com/.../Sticker-100/2.png",
+    #     "https://example.com/.../Sticker-100/3.png",
+    #     "https://example.com/.../Sticker-100/4.png",
+    #     "https://example.com/.../Sticker-100/5.png",
+    #   ]
+
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+  envId:
+  region:
+  visitor: false
+  option:
+
+# Artalk
+# https://artalk.js.org/guide/frontend/config.html
+artalk:
+  server:
+  site:
+  visitor: false
+  option:
 
 # Chat Services
 # --------------------------------------
@@ -600,6 +659,7 @@ theme_color:
   scrollbar_color: "var(--anzhiyu-scrollbar)"
   meta_theme_color_light: "#f7f9fe"
   meta_theme_color_dark: "#18171d"
+  inside_sidebar_background: "#607d8b" # @since 1.5.4 支持手机端侧边栏可定制颜色
 
 # 文章h2添加分隔线
 h2Divider: false
@@ -820,7 +880,7 @@ runtimeshow:
   enable: true
   publish_date: 4/1/2021 00:00:00
 
-# Aside widget - Newest Comments
+# Console - Newest Comments
 newest_comments:
   enable: true
   sort_order: # Don't modify the setting unless you know how it works
@@ -1069,6 +1129,7 @@ comment_barrage_config:
 # https://github.com/metowolf/MetingJS
 nav_music:
   enable: true
+  console_widescreen_music: false # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
   id: 8371966728
   server: netease
 
@@ -1147,6 +1208,11 @@ linkPageTop:
 # 缩略图后缀 archive/tag/category 页面单独开启后缀
 pageThumbnailSuffix: ''
 
+# 隐私协议弹窗
+agreementPopup:
+  enable: false
+  url: https://wuyuan.dev/privacy-policy/
+
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
@@ -1187,7 +1253,7 @@ CDN:
     # local_search:
     # algolia_js:
     # algolia_search:
-    # instantsearch_v4:
+    # instantsearch:
     # pjax:
     # blueimp_md5:
     # valine:
