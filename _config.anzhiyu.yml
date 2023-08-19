@@ -830,7 +830,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: https://cdn.wuyuan.dev/sitelogo.png
+  avatar: /img/yuanlogo.svg
 
 # aside (侧边栏)
 # --------------------------------------
