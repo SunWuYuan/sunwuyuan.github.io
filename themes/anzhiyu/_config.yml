@@ -657,7 +657,7 @@ theme_color:
   #   blockquote_padding_color: "#3b70fc"
   #   blockquote_background_color: "#3b70fc"
   scrollbar_color: "var(--anzhiyu-scrollbar)"
-  meta_theme_color_light: "#f7f9fe"
+  meta_theme_color_light: "#3b70fc"
   meta_theme_color_dark: "#18171d"
   inside_sidebar_background: "#607d8b" # @since 1.5.4 支持手机端侧边栏可定制颜色
 
