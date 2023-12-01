@@ -30,10 +30,10 @@ nav:
       item:
         - name: 个人主页
           link: https://wuyuan.dev/
-          icon: https://b2.192325.xyz/img/weblogo.png
+          icon: https://b2.190823.xyz/img/weblogo.png
         - name: 博客
           link: https://blog.wuyuan.dev/
-          icon: https://b2.192325.xyz/img/weblogo.png
+          icon: https://b2.190823.xyz/img/weblogo.png
     - title: 项目
       item:
         - name: OurWorld
@@ -197,7 +197,7 @@ mainTone:
   enable: true # true or false 文章是否启用获取图片主色调
   mode: api # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取
   # 项目地址：https://github.com/anzhiyu-c/img2color-go
-  api: https://img2color-go.192325.xyz/api?img= # mode为api时可填写
+  api: https://img2color-go.190823.xyz/api?img= # mode为api时可填写
   cover_change: true # 整篇文章跟随cover修改主色调
 
 # wordcount (字数统计)
